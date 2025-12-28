@@ -201,7 +201,7 @@ namespace mavis
         // Common to all Forms
         const uint64_t fixed_field_mask_ = 0;
 
-        static inline uint64_t extract_(const typename FormType::idType fid, const Opcode icode)
+        static constexpr inline uint64_t extract_(const typename FormType::idType fid, const Opcode icode)
         {
             return FormType::fields[fid].extract(icode);
         }
